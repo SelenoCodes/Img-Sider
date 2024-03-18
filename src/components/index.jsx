@@ -27,8 +27,8 @@ const ImgSlider = ({ url,page,limit }) => {
 
   // -----Functionalities------
 
-  const handleArrowClick = (prev, next) => {
-    prev
+  const handleArrowClick = (click) => {
+    click==="prev"
       ? setCurrSlide(currSlide === 0 ? imgs.length - 1 : currSlide - 1)
       : setCurrSlide(currSlide === imgs.length - 1 ? 0 : currSlide + 1);
   };
